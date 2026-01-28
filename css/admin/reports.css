@@ -1,0 +1,20 @@
+.card-body {
+    position: relative;
+}
+.no-data-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+canvas {
+    position: relative;
+    z-index: 1;
+}

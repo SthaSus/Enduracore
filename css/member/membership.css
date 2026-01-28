@@ -1,0 +1,93 @@
+.membership-card {
+    border: 3px solid #667eea;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+.membership-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255,255,255,0.1);
+    transform: rotate(45deg);
+}
+.plan-card {
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    transition: all 0.3s;
+    position: relative;
+}
+.plan-card:hover {
+    border-color: #667eea;
+    box-shadow: 0 5px 15px rgba(102,126,234,0.3);
+    transform: translateY(-5px);
+}
+.plan-card .discount-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ff4757;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+.status-badge {
+    font-size: 0.9rem;
+    padding: 5px 15px;
+}
+.timeline-item {
+    border-left: 3px solid #667eea;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: 5px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #667eea;
+}
+.timeline-item.expired {
+    border-left-color: #ccc;
+}
+.timeline-item.expired::before {
+    background: #ccc;
+}
+.timeline-item.pending {
+    border-left-color: #ffc107;
+}
+.timeline-item.pending::before {
+    background: #ffc107;
+}
+.payment-option {
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-bottom: 15px;
+}
+.payment-option:hover {
+    border-color: #667eea;
+    background: #f8f9ff;
+}
+.payment-option.selected {
+    border-color: #667eea;
+    background: #f0f3ff;
+    box-shadow: 0 0 15px rgba(102,126,234,0.2);
+}
+.payment-option img {
+    height: 40px;
+    object-fit: contain;
+}

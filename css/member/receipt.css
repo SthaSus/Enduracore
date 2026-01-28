@@ -1,0 +1,151 @@
+body {
+    background: #f8f9fa;
+}
+
+.receipt-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    background: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.receipt-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.receipt-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.receipt-header .gym-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.receipt-body {
+    padding: 2rem;
+}
+
+.receipt-info {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.info-row:last-child {
+    border-bottom: none;
+}
+
+.info-label {
+    font-weight: 600;
+    color: #6c757d;
+    display: flex;
+    align-items: center;
+}
+
+.info-label i {
+    width: 25px;
+    margin-right: 10px;
+}
+
+.info-value {
+    font-weight: 500;
+    color: #212529;
+}
+
+.amount-section {
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.amount-section h3 {
+    margin: 0 0 1rem 0;
+    opacity: 0.9;
+}
+
+.amount-section .amount {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.membership-details {
+    background: #e7f3ff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 4px solid #007bff;
+    margin-bottom: 2rem;
+}
+
+.footer-note {
+    text-align: center;
+    padding: 2rem;
+    border-top: 2px solid #e9ecef;
+    color: #6c757d;
+}
+
+.action-buttons {
+    text-align: center;
+    padding: 2rem;
+    background: #f8f9fa;
+}
+
+.btn-action {
+    margin: 0.5rem;
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background: white;
+    }
+    
+    .receipt-container {
+        box-shadow: none;
+        margin: 0;
+    }
+    
+    .action-buttons {
+        display: none !important;
+    }
+    
+    .receipt-header {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    
+    .amount-section {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    
+    .badge {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    
+    .membership-details {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}

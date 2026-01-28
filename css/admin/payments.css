@@ -1,0 +1,107 @@
+
+    @media print {
+        body * {
+            visibility: hidden;
+        }
+        .print-area, .print-area * {
+            visibility: visible;
+        }
+        .print-area {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            padding: 20px;
+        }
+        .no-print {
+            display: none !important;
+        }
+        .modal {
+            position: absolute;
+            left: 0;
+            top: 0;
+            margin: 0;
+            padding: 0;
+            overflow: visible;
+        }
+        .modal-dialog {
+            margin: 0;
+            max-width: 100%;
+        }
+        .modal-content {
+            border: none;
+            box-shadow: none;
+        }
+        .modal-header, .modal-footer {
+            display: none !important;
+        }
+        .receipt-header {
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+        }
+        .badge {
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+    }
+
+    .receipt-header {
+        text-align: center;
+        padding: 2rem;
+        background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+        color: white;
+        border-radius: 10px;
+        margin-bottom: 1.5rem;
+    }
+
+    .receipt-header h3 {
+        font-weight: 700;
+        margin: 0;
+        font-size: 1.8rem;
+    }
+
+    .receipt-header p {
+        margin: 0.5rem 0 0 0;
+        opacity: 0.9;
+    }
+
+    .receipt-table th {
+        width: 40%;
+        font-weight: 600;
+        padding: 0.75rem 0;
+        color: #6c757d;
+    }
+
+    .receipt-table td {
+        padding: 0.75rem 0;
+        color: #212529;
+        font-weight: 500;
+    }
+
+    .receipt-total {
+        background: #f8f9fa;
+        padding: 1.5rem;
+        border-radius: 10px;
+        margin-top: 1.5rem;
+        border: 2px dashed #dee2e6;
+    }
+
+    .filter-btn-group .btn.active {
+        background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+        color: white;
+        border-color: transparent;
+    }
+
+    .stat-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .month-card {
+        transition: all 0.3s ease;
+    }
+
+    .month-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
